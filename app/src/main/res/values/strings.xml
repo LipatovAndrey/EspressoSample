@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EspressoSample</string>
+    <string name="button_text">click_me_please</string>
+</resources>
