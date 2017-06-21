@@ -38,7 +38,7 @@ public class EspressoTest {
 
             @Override
             public boolean isIdleNow() {
-                boolean isIdle = LoadIsFinished();
+                boolean isIdle = loadIsFinished();
                 if (isIdle && resourceCallBack != null) {
                     resourceCallBack.onTransitionToIdle();
                 }
@@ -51,7 +51,7 @@ public class EspressoTest {
 
             }
 
-            private boolean LoadIsFinished() {
+            private boolean loadIsFinished() {
                 return mActivityTestRule.getActivity().mIsLoaded;
             }
         };
